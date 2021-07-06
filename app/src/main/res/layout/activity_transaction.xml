@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.TransactionActivity">
+
+    <LinearLayout
+        android:id="@+id/linearHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:showDividers="middle">
+
+                    <RadioGroup
+                        android:id="@+id/rgSelectGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@drawable/border_square"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rbtCash"
+                            style="@style/RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radio_background"
+                            android:checked="true"
+                            android:padding="5dp"
+                            android:text="Cash"
+                            android:textSize="15dp" />
+
+                        <RadioButton
+                            android:id="@+id/rbtBank"
+                            style="@style/RadioButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/radio_background"
+                            android:padding="5dp"
+                            android:text="Bank"
+                            android:textSize="15dp" />
+                    </RadioGroup>
+
+
+                    <TextView
+                        android:id="@+id/txtGroupName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:text="TextView"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorAppTheme"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/edtDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:clickable="true"
+                                    android:focusable="false"
+                                    android:hint="Date"
+                                    android:inputType="datetime"
+                                    android:textSize="15dp" />
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputParyName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <EditText
+                                    android:id="@+id/edtPartyName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:hint="Party name"
+                                    android:clickable="true"
+                                    android:focusable="false"
+                                    android:textSize="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputTile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <EditText
+                                android:id="@+id/edtTitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:hint="Enter Tile/Description"
+                                android:textSize="15dp"
+                                android:maxLength="50"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputAmount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+
+                            <EditText
+                                android:id="@+id/edtAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:hint="Enter Amount"
+                                android:inputType="numberDecimal"
+                                android:singleLine="true"
+                                android:maxLength="6"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputBank"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:visibility="gone">
+
+                            <EditText
+                                android:id="@+id/edtBank"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:focusable="false"
+                                android:hint="Select Bank"
+                                android:textSize="15dp"
+                                android:maxLength="50"
+                                android:visibility="gone" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/inputCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <EditText
+                                android:id="@+id/edtCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:focusable="false"
+                                android:clickable="true"
+                                android:hint="Select Category"
+                                android:maxLength="50"
+                                android:textSize="15dp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp">
+
+                            <RelativeLayout
+                                android:id="@+id/relativePic"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical">
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:background="@drawable/border_square"
+                                    android:padding="20dp">
+
+
+                                    <ImageView
+                                        android:id="@+id/imgCamara"
+                                        android:layout_width="60dp"
+                                        android:layout_height="60dp"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_gravity="center"
+                                        android:src="@android:drawable/ic_menu_camera" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/imgCamara"
+                                        android:layout_centerHorizontal="true"
+                                        android:textSize="12dp"
+                                        android:text="Capture Bill" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:id="@+id/imgSelected"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"/>
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_toRightOf="@+id/relativePic"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical">
+
+                                <RelativeLayout
+                                    android:id="@+id/relativeCamara"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/border_square"
+                                    android:visibility="gone">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:gravity="center_horizontal"
+                                        android:layout_centerInParent="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:textSize="12dp"
+                                        android:text="Camera" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@android:drawable/ic_menu_camera" />
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/relativeGallary"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/relativeCamara"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/border_square">>
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_alignParentLeft="true"
+                                        android:layout_marginLeft="5dp"
+                                        android:textSize="12dp"
+                                        android:text="Gallery" />
+
+                                    <ImageView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignParentRight="true"
+                                        android:src="@android:drawable/ic_menu_gallery" />
+                                </RelativeLayout>
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtSave"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:gravity="center"
+                            android:background="@color/colorAppTheme"
+                            android:text="Save"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="15dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

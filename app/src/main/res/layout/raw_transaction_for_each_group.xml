@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".5dp"
+        android:background="@color/colorGrayLight"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeItemClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <LinearLayout
+                android:id="@+id/linearDateView"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.55"
+                android:background="@drawable/border_square"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="@string/record_monthYear"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorAppTheme" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/record_day"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearType"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.85"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtGroupName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/record_groupName"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAppTheme"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtPartyName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="@string/record_party"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtSeperator1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtSeperator"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+
+                    <TextView
+                        android:id="@+id/txtCateory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="@string/record_category"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />
+                    <!--<TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="11111111111"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="18dp" />-->
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtTransactionType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/record_type"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="12sp" />
+                    <!--<TextView
+                        android:id="@+id/txtCateory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="1111111111122222"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="12dp" />-->
+
+                    <TextView
+                        android:id="@+id/txtSeperator2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/txtSeperator"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txtDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="300dp"
+                        android:singleLine="true"
+                        android:text="@string/record_descriprion"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="12sp" />
+                    <!--<TextView
+                        android:id="@+id/txtTransactionType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="100dp"
+                        android:singleLine="true"
+                        android:text="1111111111122222"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/colorGrayLight"
+                        android:textSize="12dp" />-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearAmount"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1.55"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:padding="5dp"
+                    android:text="@string/record_time"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="10sp"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtAmountTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autoSizeMaxTextSize="24sp"
+                    android:autoSizeMinTextSize="12sp"
+                    android:autoSizeStepGranularity="1sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="right"
+                    android:maxHeight="40dp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/record_amount"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorGrayLight"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtCurrency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/txtCurrencySymbol"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

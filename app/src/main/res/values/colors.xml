@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff9933</color>
+    <color name="colorPrimaryDark">#ff9933</color>
+    <color name="colorAccent">#ff9933</color>
+
+    <color name="colorTabTextSelected">#FFEB3B</color>
+
+
+    <color name="colorWhite">#FFF</color>
+    <color name="colorBlack">#000</color>
+    <color name="colorGrayDark">#696969</color>
+    <color name="colorGrayLight">#A9A9A9</color>
+    <color name="colorGrayVeryLight">#e5e5e5</color>
+    <color name="colorAppTheme">#ff9933</color>
+    <color name="colorRedDark">@android:color/holo_red_light</color>
+    <color name="colorGreenDark">@android:color/holo_green_light</color>
+    <color name="colorTransperent">#00000000</color>
+    <color name="colorRedLight">#a1fae3e3</color>
+    <color name="colorGreenLight">#d9e2f5e4</color>
+    <color name="colorGrayUltraLight">#f2f2f2</color>
+    <color name="colorBlue">#46afcf</color>
+
+</resources>

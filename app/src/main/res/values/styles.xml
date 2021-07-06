@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="customTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/colorWhite</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">8dp</item>
+        <item name="tabPaddingEnd">8dp</item>
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+        <item name="android:dividerPadding">3dp</item>
+        <item name="tabTextColor">@color/colorWhite</item>
+        <item name="android:divider">@color/colorWhite</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <!--<item name="tabSelectedTextColor">@color/colorTabTextSelected</item>-->
+    </style>
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+
+    <style name="MY.DIALOG" parent="android:Theme" >
+        <!-- <item name="searchViewStyle">@style/AppTheme.SearchView</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingRight">5.0dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:minWidth">70.0dip</item>
+        <item name="android:minHeight">33.0dip</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+</resources>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Expense Tracker</string>
+    <string name="app_version">ASSESMENT : 11721125</string>
+
+    <string name="app_icon_desc">App Icon</string>
+
+
+    <string name="strGroups">Groups</string>
+    <string name="strSummary">Summary</string>
+    <string name="strBackupRestore">backupRestore</string>
+    <string name="strBackup">Backup</string>
+    <string name="strRestore">Restore</string>
+
+
+    <string name="strConfirmRestore"><b>If you have added new data after last backup, It will be lost after Restoration.</b>\n\nAre you sure you want to proceed for restoration?</string>
+
+
+    <string name="txtSeperator">\u0020-\u0020</string>
+    <string name="txtCurrencySymbol"> $ </string>
+
+    <string name="strWarningDialogTitle">Expense Tracker says!</string>
+
+    <string name="tab_today">Today</string>
+    <string name="tab_day">Day</string>
+    <string name="tab_month">Month</string>
+    <string name="tab_year">Year</string>
+    <string name="tab_custom">Custom</string>
+    <string name="tab_all">All</string>
+
+
+    <string name="total_income">Total Income</string>
+    <string name="total_expense">Total Expense</string>
+    <string name="total_balance">Total Balance</string>
+
+
+    <string name="record_monthYear">Month Year</string>
+    <string name="record_day">Day</string>
+    <string name="record_groupName">Group Name</string>
+    <string name="record_party">Party Name</string>
+    <string name="record_category">Category Name</string>
+    <string name="record_type">Type</string>
+    <string name="record_descriprion">Description of the Transaction</string>
+    <string name="record_time">time</string>
+    <string name="record_amount">Amount</string>
+
+
+    <string name="strNoInternetAvailable">No Internet available</string>
+    <string name="strInternetAvailable">Internet available</string>
+    <string name="strYes">Yes</string>
+    <string name="strCancel">Cancel</string>
+
+    <string name="strOk">OK</string>
+    <string name="strPleaseWait">Please Wait</string>
+
+</resources>

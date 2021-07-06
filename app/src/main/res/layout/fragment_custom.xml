@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".Activities.TransactionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearHeader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:showDividers="middle">
+
+                        <RadioGroup
+                            android:id="@+id/rgSelectGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@drawable/border_square"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/rbtCustom"
+                                style="@style/RadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radio_background"
+                                android:checked="true"
+                                android:padding="5dp"
+                                android:text="Custom"
+                                android:textSize="15dp" />
+
+                            <RadioButton
+                                android:id="@+id/rbtCash"
+                                style="@style/RadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radio_background"
+                                android:padding="5dp"
+                                android:text="Cash"
+                                android:textSize="15dp" />
+
+                            <RadioButton
+                                android:id="@+id/rbtBank"
+                                style="@style/RadioButton"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/radio_background"
+                                android:padding="5dp"
+                                android:text="Bank"
+                                android:textSize="15dp" />
+
+
+                        </RadioGroup>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/lienarDates"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal"
+                                android:weightSum="5">
+
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/inputDate"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5">
+
+                                    <EditText
+                                        android:id="@+id/edtFromDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:clickable="true"
+                                        android:focusable="false"
+                                        android:hint="From Date"
+                                        android:inputType="datetime"
+                                        android:textSize="15dp" />
+
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:id="@+id/inputParyName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1.5">
+
+                                    <EditText
+                                        android:id="@+id/edtToDate"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:clickable="true"
+                                        android:focusable="false"
+                                        android:hint="To Date"
+                                        android:textSize="15dp" />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+                                <CheckBox
+                                    android:id="@+id/checkALl"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:checked="true"
+                                    android:text="All"
+                                    android:textAlignment="viewStart"
+                                    android:textColor="@color/colorAppTheme" />
+
+                            </LinearLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputTile"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+                                <EditText
+                                    android:id="@+id/edtGroupName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:clickable="true"
+                                    android:focusable="false"
+                                    android:hint="Group name"
+                                    android:maxLength="50"
+                                    android:textSize="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp">
+
+
+                                <EditText
+                                    android:id="@+id/edtPartyName"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:clickable="true"
+                                    android:focusable="false"
+                                    android:hint="Party name"
+                                    android:inputType="numberDecimal"
+                                    android:maxLength="6"
+                                    android:singleLine="true"
+                                    android:textSize="15dp" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/inputBank"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:visibility="gone">
+
+                                <EditText
+                                    android:id="@+id/edtBank"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="10dp"
+                                    android:focusable="false"
+                                    android:hint="Select Bank"
+                                    android:maxLength="50"
+                                    android:textSize="15dp"
+                                    android:visibility="gone" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:id="@+id/txtFilter"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@color/colorAppTheme"
+                                android:gravity="center"
+                                android:text="FILTER"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="15dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/headerView"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleTodaysData"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3.5"
+                android:background="@color/colorWhite"></androidx.recyclerview.widget.RecyclerView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:background="@android:color/holo_green_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textIncome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/total_income" />
+
+                    <TextView
+                        android:id="@+id/textIncomeAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:background="@android:color/holo_red_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textExpense"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/total_expense" />
+
+                    <TextView
+                        android:id="@+id/textExpenseAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".33"
+                    android:background="@android:color/holo_blue_light"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textBalance"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/total_balance" />
+
+                    <TextView
+                        android:id="@+id/textBalanceAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

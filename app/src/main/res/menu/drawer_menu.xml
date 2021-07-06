@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/groups"
+            android:icon="@drawable/ic_outline_group_24"
+            android:title="@string/strGroups"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/driveBackup"
+            android:icon="@drawable/ic_outline_cloud_upload_24"
+            android:title="@string/strBackup"
+            android:visible="true" />
+
+        <item
+            android:id="@+id/driveRestore"
+            android:icon="@drawable/ic_outline_cloud_download_24"
+            android:title="@string/strRestore"
+            android:visible="true" />
+    </group>
+
+</menu>

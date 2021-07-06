@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAppTheme">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="16dp"
+            android:src="@drawable/arrow"/>
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:minHeight="?actionBarSize"
+            android:padding="16dp"
+            android:textSize="22dp"
+            android:layout_toRightOf="@+id/imgBack"
+            android:textColor="@color/colorWhite"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/imgRefresh"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/title"
+                android:padding="16dp"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_outline_refresh_24" />
+
+            <ImageView
+                android:id="@+id/imgHome"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/title"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_outline_home_24" />
+
+            <ImageView
+                android:id="@+id/imgSummary"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imgHome"
+                android:padding="16dp"
+                android:src="@drawable/report" />
+
+            <ImageView
+                android:id="@+id/imgReport"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@+id/imgSummary"
+                android:padding="16dp"
+                app:srcCompat="@drawable/ic_outline_share_24" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
